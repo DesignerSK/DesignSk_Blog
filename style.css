@@ -1,0 +1,411 @@
+*{margin: 0; box-sizing: border-box; padding: 0;
+    box-sizing: border-box; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+header{background-color: rgb(236, 236, 236); height: 90px;
+    position: relative; display: flex; justify-content: center;
+    align-items: center; gap: 120px; font-size: 18px; 
+}
+.logo, .lokacija, .calll, .emaill {display: flex;align-items: center;
+     gap: 20px; cursor: pointer;
+}
+
+nav{clip-path: polygon(50% 0%, 100% 0, 95% 50%, 5% 50%, 0 0); 
+    width: 60%; margin: auto; background-color: rgb(255, 182, 47); 
+    
+}
+.bijeloslovo{color: rgb(255, 255, 255); 
+}
+
+.backgroundslika{   width: 100%; position: absolute; top: 90px;z-index: -10;
+    object-fit: cover; height: 100vh; 
+}
+.backgroundslika img{   width: 100%;  object-fit: cover;height: 100vh;
+}
+
+.text{  position: absolute;  
+     top: 45%; left: 60%; transform: translate(-50%, -50%);
+     width: 30%; line-height: 1.3; width: 450px;
+
+    
+    animation: probaa 6s infinite;
+}
+
+@keyframes probaa {
+    0% {
+        opacity: 0; /* Tekst je potpuno proziran na početku */
+      }
+      50% {
+        opacity: 1; /* Tekst je potpuno vidljiv na sredini animacije */
+      }
+      100% {
+        opacity: 0; /* Tekst je ponovno potpuno proziran na kraju animacije */
+      }
+    }
+
+
+.naslovjedan{ color: rgb(255, 182, 47); font-size: 36px;
+    font-weight: 1200;
+}
+
+.naslovdva{color: rgb(255, 182, 47);  color: white; font-size: 60px;
+      margin-bottom: 20px;
+}
+
+.textjedan{ color: white; font-size: 18px; font-weight: 550;
+    margin-bottom: 50px;
+}
+
+.srdjan, .slovoa{ color: white; font-size: 18px; 
+    background-color: rgb(255, 182, 47); text-decoration: none;
+    padding: 10px 40px; margin-right: 10px; 
+}
+
+#jedanaaaa{ color: rgb(0, 0, 0); font-size: 18px; 
+    padding: 10px 40px; background-color: white; text-decoration: none;
+}
+@media screen and (max-width:1080px){ 
+    header{gap: 90px; 
+    }
+}
+@media screen and (max-width:980px){ 
+    header{gap: 45px; 
+    }
+}
+@media screen and (max-width:850px){ 
+    header{ gap: 20px; 
+    }
+}
+@media screen and (max-width:800px){ 
+    .lokacija, .calll, .emaill {display: none;
+   }
+   .text{  text-align: center; position: absolute;  
+    top: 50%; left: 50%; transform: translate(-50%, -50%);
+}
+}
+
+.icons{ position: absolute; right: 45%; display: none;
+}
+
+#check{ display: none;
+}
+
+.crtice{ width: 35px; height: 5px; background-color:#ffffff;
+    margin-bottom: 5px; z-index: 500; border-radius: 2px;
+}
+
+.crte:hover{ cursor: pointer;
+}
+
+.navbar { padding: 20px 0 80px 0; display: flex; justify-content: center;
+    gap: 50px;
+}
+.aaa{ text-decoration: none; color: black; font-size: 18px;
+    transition: 0.3s;
+}
+.aaa:hover{  color: rgb(255, 255, 255); 
+}
+#bijela{  color: rgb(255, 255, 255); 
+}
+@media screen and (max-width:950px){ 
+    .navbar{ gap: 25px;
+    }
+}
+@media screen and (max-width:800px){ 
+    nav{ display: block;  background-color: rgb(255, 182, 47);
+        padding-bottom: 100px; 
+    }
+    .icons{ display: inline-block;   z-index: 1;    padding: 10px;
+        justify-content: center;
+    }
+    .navbar{    display: none;    text-align: center;
+        transition: 0.3s ease; margin-bottom: 120px;  padding-top: 50px;
+}
+.navbar .aaa{display: block; font-size: 1.1rem;  
+    margin: 1.5rem 0; transition: 0.3s; 
+   }
+   .navbar .aaa:hover{ color:  rgb(255, 255, 255);
+   }
+   #check:checked~.navbar{ display: none;
+   }
+   #check:checked~.navbar{  display: block;
+   }
+}
+
+/* drugo drugo   */
+.diodva{  position: absolute; bottom: -580px; text-align: center;
+    width: 100%; background-color: rgb(236, 236, 236); padding-bottom: 100px;
+}
+.naslovnaslov{ margin-bottom: 50px; position: relative; padding-top: 100px; 
+}
+.zutalinija{ width: 60px; height: 7px; border-radius: 10px;
+    background-color: rgb(255, 182, 47); position: absolute;
+     top: 140px; left: 48%;
+}
+.textdva{padding: 20px 0 45px 0; font-size: 18px; width: 60%;
+    margin: auto;
+}
+.aaaa{ color: white; font-size: 18px; font-weight: 550; 
+    background-color: rgb(0, 0, 0); text-decoration: none;
+    padding: 10px 40px; 
+}
+.aaaa:hover{ background:none; border:  1px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0); background: none; 
+}
+
+/*sest   6   66 6 6 6 6 6 6 66 slika*/
+
+.diotrisestslika{  position: relative; top: 1400px;
+    text-align: center;
+}
+.naslovnaslovv {   font-size: 36px;
+    font-weight: 1200;
+}
+.zutalinijadva{ width: 60px; height: 7px; border-radius: 10px;
+    background-color: rgb(255, 182, 47); position: absolute;
+     top: 50px; left: 49%;
+}
+.sest{ display: flex; margin: auto;  gap: 30px;  margin-top: 80px; 
+    width: 1200PX; position: relative;  justify-content: space-around;
+    margin-bottom: -50px;
+}
+
+.pollje{ width: 600px; height: 320px;  position: relative;
+position: relative; 
+}
+.pollje img{ width: 100%; height: 100%; object-fit: cover;
+}
+
+.pollje::after {
+    content: ''; /* Pomoćni element za postavljanje pozadine */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Da pokrije cijelu sliku */
+    height: 100%; /* Da pokrije cijelu sliku */
+    transition: background-color 0.3s ease; /* Animacija tranzicije boje */
+}
+
+.pollje:hover::after { cursor: pointer;
+    background-color: hsl(271, 76%, 53%, 0.8) ; /* Boja pozadine na hover */  
+}
+
+.pollje h4{color:white; position: absolute; bottom: 20px; left: 20px;
+    font-weight: 1200; font-size: 18px;
+}
+
+/*slicice 4    slicice 44*/
+
+main{ width: 100%; height: 500px; background-color: blueviolet;
+  position: relative; top: 1500px;
+}
+.naslovnaslovvv {   text-align: center; padding-top: 70px;
+}
+.zutalinijadvaa{ width: 60px; height: 7px; border-radius: 10px;
+    background-color: rgb(255, 182, 47); position: absolute;
+     top: 110px; left: 48%;
+}
+.cetiri{ display: flex; margin: auto;  gap: 30px;  margin-top: 80px; 
+    width: 1200PX; justify-content: space-around;
+}
+.jedan{text-align: center;
+}
+.jedan h1{color: white; font-size: 22px;
+}
+.jedan p{color: white; font-size: 18px; margin-top: 10px; 
+}
+.jedan img{  margin-bottom: 20px;  height: 70px;
+}
+
+/*okrugla slika covjek  okrugla slika*/
+
+.sredina{ position: relative; top: 1500px;  padding: 50px 0 100px 0;
+    width: 50%; margin: auto; text-align: center;
+}
+.naslovnaslovvvv{  font-size: 36px;
+}
+.zutalinijadvaaa{  width: 60px; height: 7px; border-radius: 10px;
+    background-color: rgb(255, 182, 47); margin: auto; margin-bottom: 50px;
+}
+.dvaaa{  height: 5px; margin-bottom: 20px;
+}
+.tttt{  font-size: 18px; margin-bottom: 45px;
+}
+.crticemale{  display: flex; gap: 10px; justify-content: center;
+    cursor: pointer; 
+}
+
+.crticem{  width: 50px; height: 10px; border-radius: 10px;
+    background-color: rgb(255, 182, 47); 
+}
+.crticemalemale{  background-color: black; z-index: 200;
+}
+/*cijela slikaaa    cijela*/
+
+.cijelaslika{ position: relative; top: 1500px; display: flex; gap: 30px;
+    background-color: blueviolet; align-items: center; width: 100%; 
+    color: white; 
+}
+
+.rezilt{ width: 50%;
+}
+.rezilt img{ width: 100%; 
+}
+.rezulttext{ width: 40%; 
+}
+.zital{ width: 60px; height: 8px; background-color: rgb(255, 182, 47);
+    border-radius: 20px;
+}
+.rezulttext h1{ font-size: 42px;
+}
+.rezulttext p{ font-size: 18px; margin: 20px 0 40px 0; line-height: 1.3;
+}
+
+/*predzadnje   predzadnje */
+
+.predzadnje{ width: 60%; height: 20px; 
+    margin: auto; position: relative; top: 1580px; text-align: center;
+}
+.inputi{ width: 60%; height: 500px;  
+      position: relative; top: 1700px; display: flex; margin: auto;
+      justify-content: center; gap: 50px; border: none;
+}
+.lijevo{ width: 50%; padding-top: 30px;
+}
+.lijevo input{ width: 100%; margin-bottom: 20px; font-size: 18px;
+    border: none; outline: none; border-bottom: 1px solid rgb(185, 185, 185); 
+    padding-bottom: 10px;
+}
+.zadnjiinput{ padding-top: 50px; 
+}
+.sendd {  margin-top: 25px;
+}
+.sendd a{ color: white; font-size: 16px; padding: 10px 40px; 
+    background-color: rgb(255, 182, 47); text-decoration: none;   
+}
+.desno{ width: 50%;  height:350px ;
+}
+iframe{height: 100%; width: 100%;
+}
+
+/*zadnje   footer    zadnje*/
+footer{height: 520px; background-color: rgb(36, 34, 34); width: 100%;
+    position: relative; top: 1650px; text-align: center;
+}
+input{width: 40%; padding: 10px 0 10px 10px; font-size: 18px; outline: none;
+    border: none; 
+}
+.subscribee{background-color: rgb(255, 182, 47); text-decoration: none;
+    color: rgb(36, 34, 34); border: none; padding:12px 15px 10px 15px;
+}
+.subscribee:hover{color: rgb(255, 182, 47); cursor: pointer;
+     border: 1px solid rgb(255, 182, 47);;
+    background-color: rgb(36, 34, 34);  padding:11px 15px 9px 15px;
+}
+footer h1{color: white; padding: 50px 0 20px 0;
+}
+.cetirikolone{display: flex; margin-bottom: 100px; justify-content: space-between;
+    text-align: left; width: 60%; margin: auto; color: white; font-size: 18px;
+    line-height: 1.5;
+}
+.cetirikolone h3{ margin: 50px 0 20px 0; font-weight: 900;
+}
+.cetirikolone p{ color: rgb(184, 184, 184); 
+}
+.predzik{ display: flex;  gap: 20px; align-items: center; line-height: 2;
+}
+.predzik i{ font-size: 20px;
+}
+.predzik p:hover, .oooo p:hover{cursor: pointer; color: white;
+}
+
+.zadnjeikomice{ font-size: 38px; margin-top: 25px;
+}
+.zadnjeikomice:hover{ cursor: pointer;
+}
+.ende{ margin-top: 40px; color: white; 
+}
+@media screen and (max-width:1250px){ 
+    .sest{  width: 1100px;
+    }
+    .cetiri{   width: 1100PX; 
+    }
+    .sredina{ width: 60%;
+    }
+    .inputi{ width: 80%; 
+  }
+  .cetirikolone{width: 80%; 
+}
+}
+@media screen and (max-width:1150px){ 
+    .sest{  width: 900px ;
+    }
+    .cetiri{   width: 900PX; 
+    }
+    .pollje{ width: 400px; height: 250px; 
+    }
+    .pollje img{ width: 100%; height: 100%; object-fit: cover;
+    }
+    .sredina{ width: 70%;
+    }
+}
+
+@media screen and (max-width:950px){ 
+    .sest{  width: 80%;
+    }
+    .cetiri{   width: 80%;
+    }
+    .sredina{ width: 80%;
+    }
+    .rezulttext h1{ font-size: 32px;
+    }
+    .cijelaslika{ padding: 20px;
+    }
+    .inputi{ width: 90%; 
+    }
+    .cetirikolone{width: 90%; 
+    }
+    input{width: 55%; 
+    }
+}
+@media screen and (max-width:875px){ 
+    main{ height: 550px;
+    }
+    }
+@media screen and (max-width:750px){ 
+    .sest{ display: block; width: 80%; margin-bottom: -50px;
+    }
+    .cetirikolone{display: block; text-align: center; width: 100%;   
+    }
+    .predzik{justify-content: center; 
+    }
+    footer{height: auto; padding-bottom: 20px;
+    }
+    .pollje{ width: 100%;  margin-bottom: 30px;
+    }
+    .textdva{ width: 80%;
+    }
+    .cetiri{  display: block; width: 80%; 
+    }
+    .jedan{  margin-bottom: 50px;
+    }
+    main{ height: 1070px; 
+    }
+    .cijelaslika{ display: block;
+    }
+    .rezilt{ width: 100%;height:100%;
+    }
+    .sredina{ width: 90%;
+    }
+    .rezulttext{ text-align: left; padding: 25px; width: 100%;
+    }
+    .cijelaslika{ padding: 0 0 25px 0;
+    }
+    .inputi{ display: block; width: 80%; margin: auto; margin-bottom: 400px;
+  }
+  .lijevo{ width: 100%; margin-bottom: 50px;
+  }
+  .desno{ width: 100%;  height:400px;
+  }
+}
